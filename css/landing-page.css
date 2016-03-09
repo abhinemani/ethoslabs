@@ -168,3 +168,12 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+@font-face{ 
+	font-family: 'Tertre';
+	src: url('fonts/tertre-xbol-webfont.eot');
+	src: url('fonts/tertre-xbol-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/tertre-xbol-webfont.woff') format('woff'),
+	     url('fonts/tertre-xbol-webfont.ttf') format('truetype'),
+	     url('fonts/tertre-xbol-webfont.svg#webfont') format('svg');
+}
