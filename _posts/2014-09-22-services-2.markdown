@@ -8,3 +8,9 @@ description: |
   Turn your 2D designs into high quality, 3D
   product shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit
   their website to download some of their awesome, free photoshop actions!
+  
+  - Support developing technical or innovation capacity within your government
+  - A network of other governmental leaders to connect to for advice and support
+  - An understanding of what's worked, where, to help you keep from reinventing the wheel
+
+  Curious how we think about what's possible? [See our 7 Principles for 21st Century Cities](http://www.govtech.com/data/7-Tactics-for-21st-Century-Cities.html)
