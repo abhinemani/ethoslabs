@@ -1,31 +1,9 @@
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
-
-url: http://ethoslabs.us
-title: Ethos Labs
-email: contact@ethoslabs.us
-author: Abhi Nemani
-description: "Accelerating Good Government Through Great Technology"
-copyright: 'Copyright &copy; 2016 EthosLabs. All Rights Reserved.'
-credits: 'Credits: Built using an open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
-
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
-
-# Build settings
+name: EthosLabs
 markdown: kramdown
-permalink: pretty
-
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
-
-social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
+highlighter: rouge
+excerpt_separator: <!--more-->
+paginate: 3
+paginate_path: "blog/page:num"
+baseurl: /ethoslabs-new
+name: EthosLabs
+gems: [jekyll-paginate]

@@ -1,5 +1,208 @@
 ---
 layout: default
-title: 	Accelerating Good Government Through Great Technology
-subTitle: (A work in progress)
+title: EthosLabs
+section_id: home
+services:
+  -
+    - title: Expertise
+      icon: layout
+      desc:
+        Understanding of procurement and sales/marketing tactics for government
+      color:
+    - title: Connections
+      icon: layout
+      desc:
+        Shared rolodex of government parters and investors
+      color:
+    - title: Visibility
+      icon: layout
+      desc:
+        National recognition at conferences, through press, etc
+      color: blue
+
+services-gov:
+  -
+    - title: Consulting
+      icon: layout
+      desc:
+        Through in-depth local analysis and national experiences, we help agencies adapt their processes, hire new personnel, and understand the options available.
+      color: yellow
+    - title: Networking
+      icon: layout
+      desc:
+        We help you connect with agencies around common challenges and to common solutions, and highlight the work through the netwrok to boost momentum moving forward.
+      color: yellow
+    - title: Reusable Apps/Solutions
+      icon: layout
+      desc:
+        We provide reusable templates, guides, and materials, ranging from sample contracts to open source code and policy, to lower the barrier to fully leveraging new tools and approaches.
+      color: yellow
+
+milestones:
+  - from: 0
+    to: 69
+    title: Projects completed
+  - from: 0
+    to: 726
+    title: Cups of coffee offered
+  - from: 0
+    to: 59
+    title: Happy clients
+  - from: 0
+    to: 121
+    title: Articles published
+
 ---
+
+{% include slider.html %}
+<div class='full yellow no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='call-to-action light'>
+      <div class='medium-9 large-9 columns'>
+        <p class='left'>Part accelerator, part consultancy, <b>EthosLabs</b> is a new kind of company that helps governments and startups work together.</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='button white' href='#contact'>Work with Us</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<!--<div class='full white centered-text no-padding'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='three spacing'></div>
+      <h2>Join the Network of Governments and Government Startups</h2>
+      <img class='centered' src='{{site.baseurl}}/images/network.png'>
+    </div>
+  </div>
+</div>-->
+
+<a name="services"></a>
+
+{% include whys.html shape="circle" %}
+
+<div class='full bg-3 light'>
+  <div class='row'>
+    <div class='large-6 columns'>
+      <img class='fadeinleft' src='http://ethoslabs.us/img/services/startups.jpg'>
+    </div>
+    <div class='large-6 columns'>
+		<a name="entrepreneurs"></a>
+		
+      <h2 class='light'>For Entreprenuers</h2>
+      <p>
+		  There are now hundreds of startups actively disrupting the $100B+ government technology ecosystem, working in thousands of jurisdictions, with the support of tens of millions of investment dollars. Yet — for those of us working in the field — we know that we have truly just scratched the surface. More support is needed to get to the next phase of govtech innovation: more sales traction for existing startups, more investments to help them grow, and more support and guidance as they reach scale in this new territory. That's what we offer at EthosLabs.
+      </p>
+      <a class='button boxed' href='#contact' target="_blank">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<div class='full white'>
+  {% for row in page.services %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+
+
+<div class='full bg-5'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-6 columns'>
+		<a name="governments"></a>
+		
+      <h2 class='light'>For Governments</h2>
+      <p class='light'>
+	  Government technology is often critized: failed, massive projects that get more headlines than users. But the blame can't be placed on the public servants at work, desparately trying to get the job done with broken tools and outdated policies. Indeed, it's often those people who are the most keen on changing the system -- and that's who we want to work with. Based on experience working with hundreds of govtech leaders, EthosLabs is here to help them (read: you) find a better, modern way. 
+      </p>   
+      <a class='button boxed' href='#contact'>Get in touch</a>
+    </div>
+    <div class='large-6 columns'>
+      <img class='fadeinright' src='http://ethoslabs.us/img/services/governments.png'>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<div class='full white'>
+  {% for row in page.services-gov %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<!--<div class='full no-padding'>
+  <div class='three spacing'></div>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <h2>Recent Work</h2>
+      <p>Our best and featured works so far</p>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+  {% for work in page.works %}
+    <li>
+      <a>
+        <img src='{{site.baseurl}}/images/{{ work.image }}'>
+        <div class='overlay'>
+          <div class='thumb-info'>
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include clients.html %}
+
+{% include testimonials.html bg="bg-1" %}
+
+
+<div class='full bg-4 no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='milestone light'>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
+          <span>{{milestone.title}}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div>-->
+<a name="team"></a>
+
+{% include get-in-touch.html %}
