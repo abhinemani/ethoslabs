@@ -3526,6 +3526,7 @@ kbd {
   padding: 0;
   position: relative;
   -webkit-transform: translateZ(0);
+  min-height: 125px;
 }
 .orbit-container .orbit-slides-container img {
   display: block;
