@@ -5099,7 +5099,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section ul li.active > a {
   background: white;
-  color: #fcbf31;
+/*  color: #fcbf31; */
 }
 .top-bar-section ul li.active > a:hover {
   background: #f2f2f2;
