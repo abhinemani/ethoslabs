@@ -5260,7 +5260,7 @@ meta.foundation-mq-topbar {
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 20px;
     line-height: 100px;
-    color: #fcbf31;
+    color: #3399ff;
     background: white;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
