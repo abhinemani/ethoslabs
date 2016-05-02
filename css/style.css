@@ -473,7 +473,7 @@ textarea {
 
 @media only screen and (max-width: 480px) {
   .orbit-caption h2, .orbit-caption p {
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
     top: -55px;
   }
