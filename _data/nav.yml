@@ -1,14 +1,9 @@
-- name: Services
-  path: '#services'
-  section_id: home
-  children:
-    - name: For Entreprenuers
-      path: '#entrepreneurs'
-    - name: For Governments
-      path: '#governments'
-- name: Team
-  path: '#team'
-  section_id: home
-- name: Contact
+- name: For Entrepreneurs
+  path: '#entrepreneurs'
+  section_id: entrepreneurs
+- name: For Governments
+  path: '#governments'
+  section_id: governments
+- name: Get in Touch
   path: '#contact'
   section_id: home
