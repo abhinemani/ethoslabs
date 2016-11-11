@@ -1,10 +1,10 @@
 - name: Our Principles
-  path: services.html
+  path: principles.html
   section_id: home
-- name: For Entrepreneurs
+- name: for Entrepreneurs
   path: '#entrepreneurs'
   section_id: entrepreneurs
-- name: For Governments
+- name: for Governments
   path: '#governments'
   section_id: governments
 - name: Get in Touch

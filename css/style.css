@@ -13,7 +13,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .full {
@@ -171,7 +170,7 @@ h1, h2, h3, h4 {
 /*icon-text */
 .icon-text i {
   color: white;
-  background: #4caaf2;
+  background: #0DA4E1;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
@@ -206,7 +205,7 @@ h1, h2, h3, h4 {
 }
 
 .icon-text-boxed:hover i {
-  background: #fcbf31;
+  background: #0DA4E1;
   color: white;
 }
 
@@ -225,7 +224,7 @@ h1, h2, h3, h4 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background: #fcbf31;
+  background: #0DA4E1;
   -webkit-transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
@@ -237,7 +236,7 @@ h1, h2, h3, h4 {
 
 .icon-text-circle:hover i {
   background: none;
-  color: #fcbf31;
+  color: #0DA4E1;
 }
 
 /*call-to-action */
