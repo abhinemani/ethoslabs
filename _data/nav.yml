@@ -1,3 +1,6 @@
+- name: Our Principles
+  path: services.html
+  section_id: home
 - name: For Entrepreneurs
   path: '#entrepreneurs'
   section_id: entrepreneurs
