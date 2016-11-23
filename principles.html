@@ -71,20 +71,13 @@ services:
    {% for service in row %}
 
     <div class="row">
-        <div class='medium-9 large-9 columns icon-text'>
+        <div class='medium-12 large-12 columns icon-text'>
           <i class='icon-{{service.icon}} {{service.color}}'></i>
           <h2>{{service.title}}</h2>
 		  <p><strong>Why?</strong> {{service.desc}}</p>
 		  <p><strong>How?</strong> {{service.todo}}</p>
 		  <p><strong>Who?</strong> {{service.who}}</p>		  
   	  	</div>
-        <div class='medium-3 large-3 columns'>
-            <div class="spacing"></div>
-            <div class="spacing"></div>
-            <div class="spacing"></div>
-            
-            <a href="mailto:hello@ethoslabs.us"><button>Contact us to learn a bit more</button></a>
-		</div>
 	</div>
 	{% endfor %}
     {% unless forloop.last %}
