@@ -78,6 +78,22 @@
 			&:active {
 				background-color: darken(_palette(accent1), 8);
 			}
+		
+		}
+		
+		&.special-blue {
+			box-shadow: none;
+			background-color: _palette(accent4);
+			color: _palette(bg) !important;
+
+			&:hover {
+				background-color: _palette(accent1);
+			}
+
+			&:active {
+				background-color: darken(_palette(accent1), 8);
+			}
+		
 		}
 
 		&.disabled,
