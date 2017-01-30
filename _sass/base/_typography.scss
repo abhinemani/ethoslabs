@@ -33,7 +33,7 @@
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent1) !important;
+			color: _palette(accent2) !important;
 		}
 	}
 
@@ -59,7 +59,10 @@
 		letter-spacing: _font(letter-spacing-alt);
 
 		a {
-			color: inherit;
+			color: _palette(accent2);
+			&:hover {
+				color: _palette(accent1) !important;
+			}
 		}
 
 		@include breakpoint(small) {

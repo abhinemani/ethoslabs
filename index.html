@@ -12,20 +12,39 @@ description: >
 	<p>Having sat on both sides of the table, we know who to talk to and how; what's working and what's not; and best practices to get the job done.</p>
 </header>
 <section class="tiles">
-
-  {% for post in site.posts %}
-      <article class="{{ post.class }}">
-        <span class="image">
-          <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
-        </span>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
-          <h2>{{ post.title }}</h2>
-          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-          <div class="content">
-            <p>{{ post.description }}</p>
-          </div>
-        </a>
-      </article>
-    {% endfor %}
+	<article class="style1">
+	        <span class="image">
+	          <img src="/assets/images/model.png" alt="">
+	        </span>
+	        <a href="/model/" title="The Model">
+	          <h2>The Model</h2>
+	          <div class="content">
+	            <p>Part accelerator, part consultancy, Ethos fills the gaps in the GovTech market</p>
+	          </div>
+	        </a>
+	</article>
+	<article class="style4">
+	        <span class="image">
+	          <img src="/assets/images/gov.png" alt="">
+	        </span>
+	        <a href="/governments/" title="For Governments">
+	          <h2>For Governments</h2>
+	          <div class="content">
+	            <p>Be it an app, policy, or program, Ethos helps local governments get what they need.</p>
+	          </div>
+	        </a>
+	</article>
+	<article class="style5">
+	        <span class="image">
+	          <img src="/assets/images/startups.png" alt="">
+	        </span>
+	        <a href="/startups/" title="For Startups">
+	          <h2>For Startups</h2>
+	          <div class="content">
+	            <p>Breaking into the public sector market is hard; Ethos helps.</p>
+	          </div>
+	        </a>
+	</article>
+		  
 
 </section>
