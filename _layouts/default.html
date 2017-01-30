@@ -1,178 +1,31 @@
 <!DOCTYPE html>
-<html class='no-js' lang='en'>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	{% include head.html %}
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<!--                                                                   
-                                                                             ,/%%%%/,                                  
-                                                                        ,%@@@@@@@@@@@@@(.                              
-                               .,,..                                 /&@@@@@@@@@@@@@@@@@@%.                            
-                          .&@@@@@@@@@@@.                         %@@@@@@@@@@@@@@@@@@@@@@@,                           
-                        .@@@@@@@@@@@@@@@@@@%,                    %@@@@@@@@@@@@@@@@@@@@@@@@@@/                          
-                       %@@@@@@@@@@@@@@@@@@@@@@/                *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          
-                      #@@@@@@@@@@@@@@@@@@@@@@@@&,             .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.                         
-                     #@@@@@@@@@@@@@@@@@@@@@@@@@@@##&@@@&&%%%%&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,                         
-                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@/              ./#&@@@@@@@@@@@@@@@@@@@@@@@@@,                         
-                    *@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        ./&@@@@@@@@@@@@@@@@@.                         
-                    #@@@@@@@@@@@@@@@@@@@@@@@@@@/                              *@@@@@@@@@@@@@&                          
-                    %@@@@@@@@@@@@@@@@@@@@@@&(                                    %@@@@@@@@@@,                          
-                    (@@@@@@@@@@@@@@@@@@%*                                          /@@@@@@@*                           
-                    .@@@@@@@@@@@@@@&/                                                ./@@@/                            
-                     /@@@@@@@@@@@@#....                                       .......  %@.                             
-                       %@@@@@@@@@&%#((/#&@@@@@&&&&&%(,         .,(%&&&&@@@@@@####%&&&&&&&%&%.                          
-                        /&%#%&&.     /@@@@@@@@@@@* (&&&&&&&&&&&&&, %@@@@@@@@@@&      /&&@(/%                           
-                         /&&&(      %@@@@@@@@@@@@@@  %&&&&&&&&&, (@@@@@@@@@@@@@@(      &&&&.                           
-                          ,&&.     &@@@&(,..,#&@@@@% ,&&,   #&& .@@@@@@@(#%@@@@*     #&%@,                           
-                          %&&.    (@@#          #@@&.*&*     %& ,@@@@(         #@@*    #&./&.                          
-                         #@*&(   *@@@    .#%%%%  @@* %&      ,&, &@@#     /%%%%,*@&    %%  @%                          
-                         @% .%.  %@@@.   ,%%%%%..@/ (%.       .&, #@%     #%%%%/*@@.  .%.  (@                          
-                        ,@*  .%. &@@@@%    */,.%#  &% *&&&&&&&%,#/ ,%#.    ,/*.%@@@, .#    .&*                         
-                        /&.    *%(%@@@@@@@@@&/. .#% *&&&&&&&&&&&&,##. .%%%%%&@@@@&(*%.      %#                         
-                        #%        ,#&&%%###%&&,   #&&&&&&&&&&&&*  .(%%#(///(#%*         (%                         
-                        %#                           %&&&&&&&&&&/                           /&.                        
-                        %%                              ,/((*.                              (%                         
-                        /&.                                                                 %#                         
-                        ,@*                          /&%(*,,*%&.                           ,@*                         
-                         &&                              ....                              %@                          
-                         ,@*                                                              ,@*                          
-                          .@#                                                            (@,                           
-                           .&&.                                                        .%&,                            
-                            /@@&*                                                   .#&&*                              
-                           @@@@@@@@(.                                            #@@@@@@%                              
-                          %@@@@@@@@*/&@@&%(*,.                         ..,*#%@@@@@@@@@@@@*                             
-                         #@@@@@@@@@,       ,,/(#&,,*/#%&&@@@@@@&%#(//%#/*,.     %@@@@@@@@&.                            
-                         @@@@@@@@@@              #.#%#((#&(%&%###%#.%           *@@@@@@@@@(                            
-                        .@@@@@@@@@%              .      .%##%,      .            @@@@@@@@@&                            
-                        ,@@@@@@@@@%                     #*.  %                   &@@@@@@@@&                            
-                        .@@@@@@@@@&                    *%////&*                  @@@@@@@@@%                            
-                         (@@@@@@@@@                    %(*,. ,%                 ,@@@@@@@@&.                            
-                           %@@@@&@@%,                   (* .(#,              .,#@@#@@@@&/                              
-                                 %@@@@@@@@@@@@@&&%%%%####%@%%%%%%%&&&@@@@@@@@@@@@&                                     
-                                  #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      
-                                   .#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&/                                        
-                                        ,@@@@@@@@@@#(((////(((###&@@@@@@@@@*                                           
-                                      %@@@@@@@@@@@%              ,@@@@@@@@@@@@*                                        
-                                     .&@@@@@@@@@@@,               #@@@@@@@@@@@(                                        
-                                      .@@@@@@@@@@,                 &@@@@@@@@@(                                         
-                                        ,%&@,                       *&@@&/                                           
-                                                                                 
-                        built by @abhinemani                    -->
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>{{ page.title }}</title>
-      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-      <link href='{{ site.baseurl }}/css/framework.css' rel='stylesheet'>
-      <link href='{{ site.baseurl }}/css/syntax.css' rel='stylesheet'>
-      <link href='{{ site.baseurl }}/css/style.css' rel='stylesheet'>
-      <link href='{{ site.baseurl }}/css/fontello.css' rel='stylesheet'>
-	  <link rel="shortcut icon" href='{{ site.baseurl }}/images/icons/favicon.ico' >
-	  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/icons/apple-icon-57x57.png">
-	  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/icons/apple-icon-60x60.png">
-	  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/icons/apple-icon-72x72.png">
-	  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/icons/apple-icon-76x76.png">
-	  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/icons/apple-icon-114x114.png">
-	  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/icons/apple-icon-120x120.png">
-	  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/icons/apple-icon-144x144.png">
-	  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/icons/apple-icon-152x152.png">
-	  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/icons/apple-icon-180x180.png">
-	  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/images/icons/android-icon-192x192.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/icons/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/images/icons/favicon-96x96.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/icons/favicon-16x16.png">
-      <script src='{{ site.baseurl }}/js/jquery.min.js'></script>
-	  
-      <script src='{{ site.baseurl }}/js/modernizr.js'></script>
-<link href="https://fonts.googleapis.com/css?family=Acme|Average+Sans|BenchNine:300,400,700|Open+Sans+Condensed:300,300i,700" rel="stylesheet">
-    </head>
-    <body>
-	  <div class="se-pre-con"></div>
-      <div class='contain-to-grid sticky'>
-        <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
-          <ul class='title-area'>
-            <li class='name'>
-              <h1>
-				<a href='{{site.baseurl}}/'><img src='{{site.baseurl}}/images/logo3.png'></a>
-              </h1>
-            </li>
-            <li class='toggle-topbar menu-icon'>
-              <a href='#'>Menu</a>
-            </li>
-          </ul>
-          <section class='top-bar-section'>
-            <ul class="right">
-              {% for item in site.data.nav %}
-                {% if item.section_id == page.section_id %}
-                  {% assign active_class = "active" %}
-                {% else %}
-                  {% assign active_class = "" %}
-                {% endif %}
+				{% include header.html %}
 
-                {% if item.children %}
-                  <li class="has-dropdown {{active_class}}">
-                    <a href="{{site.baseurl}}/{{ item.path }}">{{ item.name }}</a>
-                    <ul class='dropdown'>
-                      {% for child in item.children %}
-                        <li>
-                          <a href="{{site.baseurl}}/{{ child.path }}">{{ child.name }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                {% else %}
-                  <li class="{{active_class}}">
-                    <a href="{{site.baseurl}}/{{ item.path }}">{{ item.name }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </section>
-        </nav>
-      </div>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
+              {{ content }}
 
-      {{ content }}
+						</div>
+					</div>
 
+				{% include footer.html %}
 
-      <div class='footer centered-text'>
-        <div class='spacing'></div>
-        <div class='row'>
-          <div class='large-12 columns'></div>
-          <h1 class='light'>
-           <img src='{{site.baseurl}}/images/logo-square-grey.png'>
-            <br>
-            <div class='spacing'></div>
-            {{ site.name }}
-          </h1>
-          <div class='spacing'></div>
-          <div class='spacing'></div>
-          <div class='socials centered-text'>
-            <a href='#'>
-              <i class='icon-twitter grey'></i>
-            </a>
-            <a href='#'>
-              <i class='icon-facebook grey'></i>
-            </a>
-            <a href='mailto:hello@ethoslabs.us'>
-              <i class='icon-mail grey'></i>
-            </a>
-          </div>
-          <p class='copyright'>Copyright 2016 | {{ site.name }}</p>
-        </div>
-      </div>
+			</div>
 
-      <script src='{{ site.baseurl }}/js/foundation.min.js'></script>
-      <script src='{{ site.baseurl }}/js/jquery.countTo.js'></script>
-      <script src='{{ site.baseurl }}/js/jquery.appear.js'></script>
-      <script src='{{ site.baseurl }}/js/app.js'></script>
-	  <script>
-	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		{% include scripts.html %}
 
-	    ga('create', 'UA-2506770-20', 'auto');
-	    ga('send', 'pageview');
-
-	  </script>
-    </body>
+	</body>
 </html>
