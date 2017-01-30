@@ -8,10 +8,7 @@
 # Site settings
 title: EthosLabs.us
 description: > # this means to ignore newlines until "baseurl:"
-  This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
-  image tiles (of which you can have as many or as few as you like). Makes use of some
-  SVG and animation techniques I've been experimenting with on that other project of mine
-  you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+  Good government in the 21st century means good technology. But often it seems too hard for new startups to get into the business of government, even though innovative public servants and entrepreneurs want to work together. That's where EthosLabs comes in.
 url: "http://ethoslabs.us" # the base hostname & protocol for your site
 
 # Contact settings
