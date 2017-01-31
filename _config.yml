@@ -9,7 +9,7 @@
 title: EthosLabs.us
 description: > # this means to ignore newlines until "baseurl:"
   Good government in the 21st century means good technology. But often it seems too hard for new startups to get into the business of government, even though innovative public servants and entrepreneurs want to work together. That's where EthosLabs comes in.
-url: "http://ethoslabs.us" # the base hostname & protocol for your site
+url: "https://ethoslabs.us" # the base hostname & protocol for your site
 
 # Contact settings
 email: hello@ethoslabs.us
