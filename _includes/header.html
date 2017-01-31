@@ -19,7 +19,7 @@
 
 <!-- Menu -->
 <nav id="menu">
-  <h2>Menu</h2>
+  <h2>Explore</h2>
   <ul>
     {% assign pages = site.pages | sort: "order"  %}
     {% for my_page in pages %}
@@ -27,5 +27,6 @@
       <li><a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a></li>
       {% endif %}
     {% endfor %}
+	<li><a href="http://medium.com/@abhinemani">Blog</a></li>
   </ul>
 </nav>
